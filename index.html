@@ -6,10 +6,11 @@
     <link rel="stylesheet" crossorigin="anonymous"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" />
     <style>
-        .push-down{
+        .push-down {
             margin-top: 2em;
         }
-        img{
+
+        img {
             max-width: 100%;
         }
     </style>
@@ -22,7 +23,13 @@
                 <x-markdown2html src="README.md"></x-markdown2html>
             </div>
             <div class="col-md-2 push-down">
-                <x-sitemap />
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="q1.html" class="btn btn-link">Open Q1</a></li>
+                        <li><a href="q2.html" class="btn btn-link">Open Q2</a></li>
+                        <li><a href="q3.html" class="btn btn-link">Open Q3</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>

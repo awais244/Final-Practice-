@@ -1,1 +1,42 @@
-<!-- rewrite this document with the required content -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Berners-Lee and the Invention of the Web</title>
+    <script>
+        class CurrentYear extends HTMLElement {
+            connectedCallback() {
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("current-year", CurrentYear);
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>Tim Berners-Lee: The Inventor of the World Wide Web</h1>
+        <p>
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg" 
+                    alt="Photo of Tim Berners-Lee, inventor of the World Wide Web" 
+                    width="300">
+            </a>
+        </p>
+        <p>Here are the three main components of the World Wide Web as invented by Tim Berners-Lee:</p>
+        <dl>
+            <dt>HTML (HyperText Markup Language)</dt>
+            <dd>The language used to create and structure content on the web.</dd>
+            <dt>HTTP (HyperText Transfer Protocol)</dt>
+            <dd>The protocol that allows communication between web browsers and servers.</dd>
+            <dt>URI (Uniform Resource Identifier)</dt>
+            <dd>A system of unique addresses for identifying resources on the web.</dd>
+        </dl>
+    </main>
+    <footer>
+        <p>&copy; <current-year></current-year> Tim Berners-Lee Tribute</p>
+    </footer>
+</body>
+</html>
